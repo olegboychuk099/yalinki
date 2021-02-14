@@ -9,12 +9,15 @@ import {ReactiveFormsModule} from '@angular/forms';
 import {InputTextModule} from 'primeng/inputtext';
 import {ButtonModule} from 'primeng/button';
 import { HomeComponent } from './home/home.component';
+import { MaterialsTableComponent } from './materials-table/materials-table.component';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    MaterialsTableComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +25,8 @@ import { HomeComponent } from './home/home.component';
     AppRoutingModule,
     ReactiveFormsModule,
     InputTextModule,
-    ButtonModule
+    ButtonModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -33,6 +33,6 @@ export class LoginComponent implements OnInit {
     };
     this.loading = true;
     alert(`${user.login} + ${user.password}`)
-    setTimeout(() => this.router.navigate(['home']), 2000);
+    setTimeout(() => this.router.navigate(['home']), 1000);
   }
 }
